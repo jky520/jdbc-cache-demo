@@ -21,6 +21,9 @@
     
     7、springboot提供一个插件，热更新插件，修改完成代码不需要进行重启，springboot会自动加载修改的文件
        shift+ctrl+alt+/
+       
+    8、数据库连接池由默认的tomcat-jdbc换成Hikaricp连接池
+    
 # maven的一些知识点
     1、maven的生命周期是：compile(编译)、package(打包)、install(把打好的包安装到本地仓库)、deploy(把打好的包安装到本地仓库并上传到maven的服务器)
     
@@ -47,5 +50,13 @@
     然后点击 Install plugin,
     安装完后会自动提示你是否重新启动，
     重启后生效
+    
+# 日志管理
+    1、外观组件： slf4j-api, Facade, 门面模式， 日志系统标准。
+    2、具体的实现组件： log4j, logback, log4j2目前比较流行的日志框架
+    3、application --> slf4j-api --> log4j/logback(springboot默认的日志框架)/log4j2
+    
+    appender用来把日志发送到指定的地方（console(std-out,std-err), file, rsyslog）
+    layouts用来确定日志的前缀格式
         
     

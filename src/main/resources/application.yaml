@@ -1,0 +1,9 @@
+spring:
+  devtools:
+    restart:
+      enabled: false
+
+logging:
+  level:
+    com.loc.springboot: warn
+  file: log.txt
