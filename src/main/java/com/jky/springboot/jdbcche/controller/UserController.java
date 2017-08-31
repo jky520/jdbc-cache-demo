@@ -15,6 +15,8 @@ public class UserController {
 
     @GetMapping("/index")
     public String index() {
+        User user = User.builder().id(1).username("jky").password("123456").build();
+        user.getId();
         return null;
     }
 }

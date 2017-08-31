@@ -39,6 +39,13 @@
         2.5、system （系统范围）
             system范围依赖与provided 类似，但是你必须显式的提供一个对于本地系统中JAR 文件的路径。这么做是为了允许基于本地对象编译，而这些对象是系统类库的一部分。这样的构件应该是一直可用的，Maven 也不会在仓库中去寻找它。
             如果你将一个依赖范围设置成系统范围，你必须同时提供一个 systemPath 元素。注意该范围是不推荐使用的（你应该一直尽量去从公共或定制的 Maven 仓库中引用依赖）。
-            
+
+# idea中使用lombok插件的安装方法
+    依次点击工具栏上的File ---> Settings --->Plugins 
+    点击Browse repositories
+    输入lombok Plugin
+    然后点击 Install plugin,
+    安装完后会自动提示你是否重新启动，
+    重启后生效
         
     

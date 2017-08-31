@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
  */
 @Data // 自动生成getter和setter方法
 @Builder // 会自定构建建造模式
-@NoArgsConstructor // 自动创建无惨构造函数
+@NoArgsConstructor // 自动创建无参构造函数
 @AllArgsConstructor // 自动创建全参数的构造函数
 public class User {
     private Integer id;
